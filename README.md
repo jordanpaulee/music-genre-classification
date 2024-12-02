@@ -84,5 +84,5 @@ Run the script to extract features and augment the dataset:
 This project is licensed under the MIT License.
 
 ## Acknowledgments
-GTZAN Dataset creators
-Open-source libraries and contributors
+- GTZAN Dataset creators  
+- Open-source libraries and contributors
