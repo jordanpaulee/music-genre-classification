@@ -38,7 +38,7 @@ music_genre_classification/
 ## **Dataset**
 - **Name**: GTZAN Dataset or equivalent
 - **Description**: A collection of 10 music genres with 100 audio tracks per genre.
-- **Source**: [Marsyas GTZAN Dataset](http://marsyas.info/downloads/datasets.html)
+- **Source**: [Marsyas GTZAN Dataset](https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification)
 
 ---
 
