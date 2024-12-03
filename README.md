@@ -58,16 +58,16 @@ music_genre_classification/
 3. Ensure the GTZAN dataset is placed in the data/raw/ folder
 
 ### **Usage**
-1. Preprocess the Data
+1. Preprocess the Data:  
 Run the script to extract features and augment the dataset:
     ```bash
     python src/data_preprocessing.py
     python src/augmentation.py
-2. Train Models:
+2. Train Models:  
     Train baseline and deep learning models:
    ```bash
    python src/model_training.py
-3. Evaluate Models
+3. Evaluate Models:  
     Evaluate and generate performance metrics:
     ```bash
     python src/evaluation.py

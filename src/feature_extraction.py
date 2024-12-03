@@ -7,7 +7,7 @@ import data_preprocessing
 
 def extract_features(file_path):
     try:
-        # File Path Check
+        # File Check
         print(f"Processing file: {file_path}")
 
         # Load the audio file

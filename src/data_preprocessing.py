@@ -1,4 +1,5 @@
 import os
+import feature_extraction
 
 data_dir = "data/raw/"
 genres = os.listdir(data_dir)
@@ -22,10 +23,4 @@ def explore_dataset(data_dir):
             print(f"Warning: {genre_path} is not a directory.")
 
 if __name__ == "__main__":
-    DATA_DIR_ORG = "data/raw/genres_original"  # Path to raw audio dataset
-    explore_dataset(DATA_DIR_ORG)
-
-    print(f" ")
-
-    DATA_DIR_IMG = "data/raw/images_original"  # Path to raw image dataset
-    explore_dataset(DATA_DIR_IMG)
+    features, labels = feature_extraction.save_features()
