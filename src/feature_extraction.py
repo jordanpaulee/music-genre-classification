@@ -87,16 +87,26 @@ def save_features(extract_features):
     labels = []
     filenames = []
 
+    # Filter out non-directories (like .DS_Store) for Mac Compatibility
+    genres = [g for g in os.listdir(data_preprocessing.data_dir) if os.path.isdir(os.path.join(data_preprocessing.data_dir, g))]
+
+    # Sort genres for consistent processing on Mac, thanks Apple...
+    genres.sort()
+
+
     # Print out the genres and data directory
-    print("Genres:", data_preprocessing.genres)
+    print("Genres:", genres)
     print("Data Directory:", data_preprocessing.data_dir)
 
-    for genre in data_preprocessing.genres:
+    for genre in genres:
+        #dirs.sort()  # Ensure consistent order of subdirectories
         genre_path = os.path.join(data_preprocessing.data_dir, genre)
         print(f"Checking genre path: {genre_path}")
 
         # Find all audio files
         for root, dirs, files in os.walk(genre_path):
+            files.sort()  # Ensure consistent order of files, because MacOS
+            
             for file in files:
                 if file.lower().endswith(('.wav', '.mp3', '.au', '.aiff', '.flac')):
                     file_path = os.path.join(root, file)
