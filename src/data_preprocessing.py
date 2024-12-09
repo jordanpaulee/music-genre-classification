@@ -1,5 +1,4 @@
 import os
-import feature_extraction
 
 data_dir = "data/raw/"
 genres = os.listdir(data_dir)
@@ -22,5 +21,5 @@ def explore_dataset(data_dir):
         else:
             print(f"Warning: {genre_path} is not a directory.")
 
-if __name__ == "__main__":
-    features, labels = feature_extraction.save_features()
+#if __name__ == "__main__":
+#features, labels = feature_extraction.save_features()
