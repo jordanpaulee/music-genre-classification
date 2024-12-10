@@ -1,7 +1,9 @@
 import os
 
+
 data_dir = "data/augmented/"
 genres = os.listdir(data_dir)
+
 
 def explore_dataset(data_dir):
     """
@@ -22,4 +24,6 @@ def explore_dataset(data_dir):
             print(f"Warning: {genre_path} is not a directory.")
 
 #if __name__ == "__main__":
-#features, labels = feature_extraction.save_features()
+    #features, labels = feature_extraction.save_features()
+    #explore_dataset("data/raw")
+    #None
