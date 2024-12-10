@@ -147,8 +147,8 @@ def save_features(extract_features):
     os.makedirs('data/features', exist_ok=True)
     
     # Save to CSV
-    df.to_csv("data/features/features.csv", index=False)
-    print("Features saved to data/features/features.csv")
+    df.to_csv("data/features/augmented_features.csv", index=False)
+    print("Features saved to data/features/augmented_features.csv")
 
     return features, labels
 

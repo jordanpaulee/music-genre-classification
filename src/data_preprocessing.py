@@ -1,6 +1,6 @@
 import os
 
-data_dir = "data/raw/"
+data_dir = "data/augmented/"
 genres = os.listdir(data_dir)
 
 def explore_dataset(data_dir):
