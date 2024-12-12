@@ -10003,3 +10003,8 @@ data/aug_spectrograms/rock/rock.00098_aug_3.png
 data/aug_spectrograms/rock/rock.00099_aug_1.png
 data/aug_spectrograms/rock/rock.00099_aug_2.png
 data/aug_spectrograms/rock/rock.00099_aug_3.png
+models/large_aug_CNN_model.joblib
+models/large_raw_CNN_model.joblib
+models/raw_CNN_model.joblib
+models/small_aug_CNN_model.joblib
+models/small_raw_CNN_model.joblib
